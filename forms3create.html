@@ -1,0 +1,32 @@
+<html>
+<title>forms</title>
+<link rel="stylesheet" href="form.css">
+<body>
+<h2>LOGIN</h2>
+<div>
+<form id="RR">
+<input type="text" id="name" value="name" placeholder=" " required><br><br>
+<input type="email" id="email" value="email" autocomplete="on" required><br><br>
+<input type="password" id="password" placeholder="@#!*" pattern="@#!*" required><br><br>
+<input type="submit" id="submit" onclick="AB()" value="submit"pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}" required><br><br>
+</form>
+</div>
+<script>
+function AB() {
+var x = document.forms["RR"]["name"].value
+var y = document.forms["RR"]["email"].value
+var z = document.forms["RR"]["password"].value
+if(x==""){
+window.alert("plese enter");
+}if(x==""){
+window.alert("plese enter");
+}
+if(x==""){
+window.alert("plese enter");
+}
+console.log("name :"+x);
+console.log("mail:"+y);
+}
+</script>
+</body>
+</html>

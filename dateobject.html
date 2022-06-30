@@ -1,0 +1,35 @@
+<html>
+<title>DATE OBJECT</title>
+<body>
+<h4>Date Object</h4>
+<p id=demo>current date</p>
+<p id=demo1>constant Date</p>
+<p id=demo2>constant Date</p>
+<p id=demo3>constant Date</p>
+<p id=demo4>constant Date</p>
+<p id=demo5>constant Date</p>
+<p id=demo6>constant Date</p>
+<p id=demo7>constant Date</p>
+<p id=demo8>onstant Date</p>
+<script>
+const d = new Date();
+      d1 = new Date(2022,04,03,8,8,02);
+      d2 = new Date(2022,04,03,8,8,);
+      d3 = new Date(2022,04,03,8,);
+      d4 = new Date(2022,04,03);
+      d5 = new Date(2022,04);
+      d6 = new Date(2022);
+      d7 = new Date(100000000000);
+      d8 = new Date(-100000000000);
+document.getElementById("demo").innerHTML = d;
+document.getElementById("demo1").innerHTML = d1;
+document.getElementById("demo2").innerHTML = d2;
+document.getElementById("demo3").innerHTML = d3;
+document.getElementById("demo4").innerHTML = d4;
+document.getElementById("demo5").innerHTML = d5;
+document.getElementById("demo6").innerHTML = d6;
+document.getElementById("demo7").innerHTML = d7;
+document.getElementById("demo8").innerHTML = d8;
+</script>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<html>
+<head>
+.form { 
+  background : rgba(45, 52, 54, 1);
+  display : flex;
+  padding : 0 50px;
+  height  : 100%;
+  align-items : center;
+  text-align: center;
+}
+body {
+  background-color: lightblue;
+ text-align: center;
+}
+h2{
+color: #0003;
+}
+input[type="submit"] { 
+color:#0003;
+font-size : 12px;
+font-weight: bold;
+padding : 12px 35px;
+margin-top: 15px;
+border: 1px solid #f4b2b;
+border-radius: 20px;
+text-transform: uppercase;
+transition: transform 80ms ease-in;
+}
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+width: 240px;
+text-align: center;
+background: transparent;
+border: none;
+border-bottom: 1px solid #0003;
+font-family: "Roboto ",sans-serif;
+font-size: 16px;
+font-weight: 200px;
+padding: 10px 0;
+transition: border 0.5s;
+outline: border 0.10s;
+color: #fff;
+font-weight: bold;
+}
+</head>
+</html>

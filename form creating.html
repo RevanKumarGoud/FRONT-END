@@ -1,0 +1,51 @@
+<html>
+<head>
+<link rel="stylesheet" href="styles1.css">
+</head>
+<body>
+<div class = "social -container">
+<p id ="container"></p>
+<form>
+<h1>Create Account</h1>
+<p id="signup"></p>
+<div class ="social-container">
+    <a href = "https://www.facebook.com/" class = "social"><img src="23.JFIF" width="20" height="20"><i class ="fab fa-facebook"></i></a>
+    <a href = "https://www.linkedin.com/"class = "social"><img src="24.PNG" width="20" height="20"><i class ="fab fa-linkedin"></i></a>
+    <a href = "https://www.instagram.com/accounts/login/"class ="social"><img src="25.PNG" width="20" height="20"><i class ="fab fa-instagram"></i></a>
+</div>
+<span>Create an account for free </span><br><br>
+  <input type ="text"placeholder ="Name"/><br><br>
+  <input type ="email"placeholder ="Email"/><br><br>
+  <input type ="password"placeholder ="password"/><br><br>
+<button onclick="signup">sing up</button><br><br>
+</form>
+</div>
+
+<div class = "form-container sign-in-container">
+<form>
+<h1>Sign In</h1>
+<p id="signin"></p>
+<div class ="social-container">
+    <a href="https://www.facebook.com/" class ="social"><img src="23.JFIF" width="20" height="20"><i class ="fab fa-facebook"></i></a>
+    <a href = "https://www.linkedin.com/" class ="social"><img src="24.PNG" width="20" height="20"><i class ="fab fa-linkedin"></i></a>
+    <a href = "https://www.instagram.com/accounts/login/" class ="social"><img src="25.PNG" width="20" height="20"><i class ="fab fa-instagram"></i></a>
+</div>
+<span>Already have account?</span><br><br>
+  <input type ="email"placeholder ="Email"/><br><br>
+  <input type ="password"placeholder ="password"/><br><br>
+<button onclick="signin">Sign In</button><br><br>
+</form>
+</div>
+<script>
+const signUpbutton = document.getElementById('signup');
+const signInbutton = document.getElementById('signin');
+const container = document.getElementById('container');
+signUpbutton.addEventListener("click",() => {
+container.classlist.add("right-panel-active");
+});
+signInbutton.addEventListener("click",() => {
+container.classlist.remove("right-panel-active");
+});
+</script>
+</body>
+</html>

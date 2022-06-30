@@ -1,0 +1,18 @@
+<html>
+<body>
+<script>
+var users =[
+     "revan",
+      "hii",
+      "heloo",
+      "how are you",
+       "how can help you",
+         "better",
+];
+const filteredAndsortedkeywords = users
+      .filter((revan, index) => users.lastIndexOf((revan)===index))
+      .sort((a,b) => (a < b ? -1 : 1));
+console.log(filteredAndsortedkeywords);
+</script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<html>
+<head> Events </head>
+<body>
+<h3 id ="demo" onclick = "colorchange()">This sentance click change color</h3>
+
+<p id = "Hi">this lines are color changing </p>
+<p id ='demo1'></p>
+<button onclick ="getElementById('demo1').innerHTML = Date()">Click display time & date </button>
+<p id = "font">This lines change  style</p>
+<p>Click anywhere in this window to change the style</p>
+<script>
+  function clicevent() {
+document.write('This change the content');
+}
+function colorchange() {
+document.getElementById("demo").style.color = "red";
+}
+document.getElementById("Hi").onclick = function() {Add()};
+function Add() {
+document.getElementById("Hi").style.color ="blue";
+}
+document.getElementById("font").onclick = function() {Style()};
+function Style() {
+document.getElementById("font").style.fontSize = "x-large";
+}
+window.onclick = RR;
+function RR() {
+ document.getElementsByTagName("BODY")[0].style.backgroundColor = "lightblue";
+}
+</script>
+<form>
+<input type = "button" onclick ="clicevent()" value = "WHO'S THIS ?"/>
+</form>
+</body>
+</html>

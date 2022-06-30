@@ -1,0 +1,36 @@
+<html>
+<title>Arrays Method</title>
+<body>
+<h1>Arrays Method</h1>
+<p id="demo"></p>
+<p id="demo1"></p>
+<script>
+let a = ["10", "20", "30", "40",]
+ b = ["50","60","70","80"];
+c= ["abc", "def", "xyz"]
+document.writeln("a="+a+"<br>")
+document.writeln("b="+b+"<br>")
+document.writeln("c="+c+"<br>")
+document.writeln(a.join("$")+"<br>")
+document.writeln(b.join("#")+"<br>")
+document.getElementById("demo").innerHTML = a.sort();
+document.getElementById("demo1").innerHTML = a.reverse();
+document.writeln(a.pop()+"<br>")
+document.writeln(a.push()+"<br>")
+document.writeln("a="+a+"<br>")
+document.writeln(a.shift()+"<br>")
+document.writeln(b.shift()+"<br>")
+document.writeln(a.unshift("100")+"<br>")
+document.writeln("a="+a+"<br>")
+document.writeln(b.unshift("100")+"<br>")
+document.writeln("b="+b+"<br>")
+document.writeln(a.concat(c)+"<br>")
+document.writeln(a.concat(b,c)+"<br>")
+document.writeln(b.splice(1,2,"R")+"<br>")
+document.writeln("b="+b+"<br>")
+document.writeln(c.slice(2,3)+"<br>")
+document.writeln(c.slice(1)+"<br>")
+document.writeln("c="+c+"<br>")
+</script>
+</body>
+<html>

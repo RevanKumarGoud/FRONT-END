@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<style>
+body{
+background: #c0afaf url("pic1.JPG");
+background-repeat: no-repeat;
+background-position: 35% top;
+background-size: 19% 22%;
+}
+
+fieldset {
+background-color:#c0afaf;
+  margin:300px;
+  padding:50px;
+  width:40%;
+  text-align: center;
+}
+input[type="text"],
+input[type="email"],
+input[type="date"],
+input[type="password"] {
+text-align: center;
+
+background-color: black;
+
+webkit-appearance: none;
+
+outline-style: hidden;
+
+  padding: 12px 20px;
+
+  margin: 8px 0;
+
+  display: inline-block;
+
+  border: 1px solid #ccc;
+
+  box-sizing: border-box;
+   color: pink;
+}
+</style>
+<body>
+
+
+<form  id="form">
+ <fieldset>
+  <legend>Personalia:</legend>
+
+  <label for="fname">First name:</label>
+  <input type="text" id="fname"  placeholder ="Enter your Firstname"><br><br>
+
+  <label for="lname">Last name:</label>
+  <input type="text" id="lname"  placeholder ="Enter your lastname"><br><br>
+
+  <label for="email">Email:</label>
+  <input type="email" id="email"   placeholder ="Enter your email" required><br><br>
+
+
+ <label>password</label><input type = "password" id="password"  placeholder="@#!*"pattern="@#!*"/><br><br>
+
+
+  <label for="birthday">Birthday:</label>
+  <input type="date" id="date"  required><br><br>
+
+  <button onclick="AB()" value="submit">Submit</button>
+
+ </fieldset>
+</form>
+<script>
+function AB() {
+var x = document.forms["form"]["fname"].value
+var y = document.forms["form"]["email"].value;
+var z = document.forms["form"]["password"].value;
+var Y = document.forms["form"]["lname"].value;
+var Z = document.forms["form"]["date"].value;
+
+ if (x == "" || x == null) {
+    alert("Name must be filled out");
+    return false;
+  } if (y == "" && y == null) {
+    alert("Name must be filled out");
+  } if (z == "" || z == null) {
+    alert("Name must be filled out");
+  }
+ if (Y == "" || Y == null) {
+    alert("Name must be filled out");
+  }
+if (Z == "" || Z == null) {
+    alert("Name must be filled out");
+  }
+ console.log("name :"+x+" " +Y);
+ console.log("mail:"+y);
+console.log('birthdaydate: '+  Z);
+}
+</script>
+</body>
+</html>

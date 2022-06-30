@@ -1,0 +1,45 @@
+<html>
+<head>
+<link rel="stylesheet" href="create.css"/>
+</head>
+<body>
+<h2>Login</h2>
+<form id ="demo">
+<label>UserName</label>
+<input type = "text"  id ="name" placeholder ="Enter your name" required><br><br>
+<label>Enter your mail</label>
+<input type ="email" id="email" placeholder ="Enter your email" required><br><br>
+
+<label>Enter your phone number</label>
+  (<input id="tel1" type="tel" pattern="[0-9]{3}" placeholder="###" aria-label="3-digit area code"maxlength="3" size="3"required/>) -
+   <input id="tel2" type="tel" pattern="[0-9]{3}" placeholder="###" aria-label="3-digit prefix" maxlength="3"size="3"required/> -
+  <input id="tel3" type="tel" pattern="[0-9]{4}" placeholder="####" aria-label="4-digit number" maxlength="4"size="4"required/><br><br>
+<label>password</label><input type = "password" id="password"placeholder="@#!*"pattern="@#!*"/><br><br>
+<button onclick="AB()" value="submit">Submit</button>
+ </label><br><br>
+    <span class="psw">Forgot <a href="#">password?</a></span>
+    <span class="logUp">logUP<a href="file:///C:/Users/91986/Documents/HTML/create1.html" target = "_blank">login UP?</a></span>
+<script>
+function AB() {
+var x = document.forms["demo"]["name"].value
+var y = document.forms["demo"]["email"].value;
+var z = document.forms["demo"]["password"].value;
+var Y = document.forms["demo"]["tel1","tel2","tel3"].value;
+ if (x == "" || x == null) {
+    alert("Name must be filled out");
+    return false;
+  } if (y == "" || y == null) {
+    alert("Name must be filled out");
+  } if (z == "" || z == null) {
+    alert("Name must be filled out");
+  }
+ if (Y == "" || Y == null) {
+    alert("Name must be filled out");
+  }
+ console.log("name :"+x);
+ console.log("mail:"+y);
+ console.log("number :"+Y);
+}
+</script>
+</body>
+</html>

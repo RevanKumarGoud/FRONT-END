@@ -1,0 +1,58 @@
+<html>
+<body>
+<h3 id ="demo" onmousedown="Down()" onmouseup="Up()">Mouse Events</h3>
+<h3 id="demo1">Click here</h3>
+<p id=demo2>This is change font size</p>
+<p id ="R" onmousemove="myMove()">onmousemove: Mouse over and leave. </p>
+<p id ="G" onmouseleave="myleave()">onmouseleave: Mouse over and leave .</p>
+<p id = "H" onmouseout="myOut()">onmouseout: Mouse over and leave. </p>
+<script>
+function Down() {
+  document.getElementById("demo").style.color = "red";
+}
+
+function Up() {
+  document.getElementById("demo").style.color = "green";
+}
+document.getElementById("demo1").onmousedown = function() {mouseDown()};
+document.getElementById("demo1").onmouseup = function() {mouseUp()};
+
+function mouseDown() {
+  document.getElementById("demo1").innerHTML = "The mouse button is held down.";
+}
+
+function mouseUp() {
+  document.getElementById("demo1").innerHTML = "You released the mouse button.";
+}
+document.getElementById("demo2").onmouseenter = function(){mouseEnter()};
+document.getElementById("demo2").onmouseleave = function(){mouseLeave()};
+function mouseEnter() {
+document.getElementById("demo2").style.fontSize = "50px";
+document.getElementById("demo2").style.color = "yellow";
+document.getElementById("demo2").style.fontFamily = "papyrus";
+}
+function mouseLeave() {
+document.getElementById("demo2").style.fontSize = "80px";
+document.getElementById("demo2").style.color = "blue";
+document.getElementById("demo2").style.fontFamily = "bold";
+
+}
+var x = 0;
+var y = 0;
+var z = 0;
+
+function myMove() {
+  document.getElementById("R").innerHTML = z+=1;
+}
+
+function myleave() {
+  document.getElementById("G").innerHTML = x+=1;
+}
+
+function myOut() {
+  document.getElementById("H").innerHTML = y+=1;
+}
+
+</script>
+</body>
+</html>

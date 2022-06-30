@@ -1,0 +1,41 @@
+<html>
+<body>
+<script>
+
+const prices = [10, 13, 14, 16, 18];
+let max = prices[0];
+
+for (let i = 0; i < prices.length; i++) { 
+  let element = prices[i];
+  if (element > max) {
+    max = element;
+  }
+}
+console.log(`The largest value is ${max}`);
+
+const sales = [6, 21, 25, 54, 71, 75, 96, 97];
+
+let sum = 0;
+for (let i = 0; i < sales.length; i++) {
+  let element = sales[i];
+  sum = sum + element;
+}
+
+console.log(`Total Sales is ${sum}`);
+
+function largestNumber(numbersArray) {
+  let max = numbersArray[0];
+  for (let i = 0; i < numbersArray.length; i++) {
+    let element = numbersArray[i];
+    if (element > max) {
+      max = element;
+    }
+  }
+  return max;
+}
+const profit = [7, 12, 15, 18, 20];
+console.log(largestNumber(profit)); 
+
+</script>
+</body>
+</html>

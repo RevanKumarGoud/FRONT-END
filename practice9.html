@@ -1,0 +1,32 @@
+<html>
+<body>
+<script>
+let nums = [];
+ nums[0] = 5;
+ nums[99] =9;
+for (let n in nums){
+console.log(nums);
+}
+var positions = ['right','left', 'up', 'under'];
+ 
+for (var i = 0; i < positions.length; i++) {
+var counter=i+1;
+var CharSuffix;  
+console.log(positions[i]);
+  if(i==0) {
+CharSuffix = "st";
+}
+else if(i==1) {
+CharSuffix = "nd";
+ }
+else if(i==2) {
+CharSuffix ='rd'
+}
+else{
+CharSuffix = 'th';
+}
+console.log("positions"+counter+CharSuffix+positions[i]);
+}
+</script>
+</body>
+</html> 

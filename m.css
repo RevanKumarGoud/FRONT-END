@@ -1,0 +1,33 @@
+<html>
+<head>
+body{
+background-Color: blue;
+}
+.div{
+background : rgba(45, 52, 54, 1);
+  display : flex;
+  padding : 0 50px;
+  height  : 100%;
+  align-items : center;
+  text-align: center; 
+}
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+width: 240px;
+text-align: center;
+background: transparent;
+border: none;
+border-bottom: 1px solid #fff;
+font-family: "Roboto ",sans-serif;
+font-size: 16px;
+font-weight: 200px;
+padding: 10px 0;
+transition: border 0.5s;
+outline: border 0.5s;
+color: -#fff;
+font-weight: bold;
+}
+
+</head>
+</html>

@@ -1,0 +1,63 @@
+<html>
+<body>
+<p id="demo">/p>
+<p id="p1">/p>
+<p id="p2">/p>
+<script>
+const myobj={
+   name: "revan",
+   age  : "30",
+   cars: {
+   car1: "Ford",
+   car2: "BMW",
+   car3: "Fiat"
+}
+}
+console.log(`" Name is caar :"${myobj.cars.car3}`)
+console.log(`" Name is caar :"${myobj.cars["car2"]}`)
+console.log(`" Name is caar :"${myobj["cars"]["car2"]}`)
+
+let X="";
+const myObj = {
+	name: "Revan" ,
+	age: "23",
+	cars: [
+	 {name: "Ford", models:["Fiesta","Focus","Mustang"]},
+       {name:"BMW", models:["320", "X3", "X5"]},
+	 {name: "Fait",models: ["500","panada"]}
+]
+}
+for (let i in myObj.cars) {
+  X += "<h2>" + myObj.cars[i].name + "</h2>";
+  for (let j in myObj.cars[i].models) {
+    X += myObj.cars[i].models[j] + "<br>";
+  }
+}
+document.getElementById("demo").innerHTML=X;
+
+	var person = new Object();
+		person.firstName = "James";
+		person.lastName = "Bond";
+
+		for(var i in person){
+				alert(i); 
+				alert(person[i]);
+};
+
+		function changeFirstName(fn)
+		{
+			fn.firstName = "Steve";
+		}
+
+		var person = { firstName : "Bill" };
+		
+		document.getElementById("p1").textContent = person.firstName; 
+
+		changeFirstName(person)    
+
+		document.getElementById("p2").textContent = person.firstName; 
+		
+
+</script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 100px;
+    justify-content: center;
+    background-image: url("https://th.bing.com/th/id/R.4b83ff060c6d1f63a4a6b3ba2ba3e440?rik=e6UOs4RhUcUiLg&riu=http%3a%2f%2fforums.crackberry.com%2fattachments%2fblackberry-passport-f434%2f346281d1428457888t-perfect-background-toronto-material-design-illust-art-blackberry-passport_edit3.jpg&ehk=jdzhzXsn5CsLxHIHiO3km4munRiBtqFffMATcqL1VcQ%3d&risl=&pid=ImgRaw&r=0");
+    background-repeat: no-repeat;
+    background-size:100%;
+    
+}
+.container:hover{
+    color: rgb(44, 244, 211);
+}
+.nav-link:hover{
+    color: rgb(242, 178, 114);
+}
+.nav-item{
+    background-color: bisque;
+ cursor: pointer;
+}
+.ram:hover{
+    color:aliceblue;
+    font-family: 'Courier New', Courier, monospace;
+}
+.ram{
+text-align: right;
+margin-top:-200px;
+box-shadow: rgb(240, 123, 123);
+}
+.nav-tabs{
+    margin-top:-240px;
+}
+h2{
+    color:rgb(26, 172, 202);
+}

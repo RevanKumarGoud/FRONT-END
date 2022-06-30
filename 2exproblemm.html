@@ -1,0 +1,86 @@
+<html>
+<head>
+<style>
+body{
+padding-top: 100px;
+font-famaliy: sans-serif;
+background-color: #0005;
+height: 100vh;
+-webkit-font-smoothing: subpixel-antialiased
+}
+div{
+width: 50%;
+margin: auto;
+border: 1px solid lightgray;
+border-radius:  5px;
+-webkit-box-shadow: 0 1px 2px 0 rgb(34 36 38 / 15%);
+padding: 10px;
+padding-left: 20px;
+padding-bottom: 30px;
+ animation-name: example;
+background-color: lightskyblue;
+animation-duration: 10s;
+}
+}
+button {
+padding:5px;
+font-size: 16px;
+fon-weight: bold;
+}
+label{
+font-size: 20px;
+font-weight:bold;
+}
+input[type=chekbox] {
+width: 20px;
+height: 20px;
+}
+@keyframes example {
+  0%   {background-color: #f7162;}
+  25%  {background-color: #be1826;}
+  50%  {background-color: #d41b2b;}
+  75% {background-color: #e63d4b;}
+ 100% {background-color: #26e3d3;}
+
+}
+</style>
+</head>
+<body>
+<div>
+<h2>Select a program language love you</h2>
+<form id= 'frm-lang'>
+<input type = "checkbox" name="language" value="JAVASCRIPT">
+<label>JAVASCRIPT</label><br><br>
+<input type = "checkbox" name="language" value="PHP">
+<label>PHP</label><br><br>
+<input type = "checkbox" name="language" value="C#">
+<label>C#</label><br><br>
+<input type = "checkbox" name="language" value="C++">
+<label>C++</label><br><br>
+<button id = 'btnSubmit'>Submit</button>
+<button id = "btncheckAll">CheckAll</button>
+</form>
+</div>
+<script>
+let form = document.getElementById('frm-lang');
+var values = [];
+form.addEventListener('submit', function(e) {
+e.preventDefault();
+var checkboxes = document.getElementsByName('language');
+for(var i = 0; i <checkboxes.length; i++){
+    if(checkboxes[i].checked == true) {
+     values.push(checkboxes[i].value);  
+}
+}
+alert(`the values(s)` + values.toString());
+});
+document.getElementById('btncheckAll').onclick = function(e) {
+e.preventDefault();
+var checkboxes = document.getElementsByName('language');
+for(var i =0; i < checkboxes.length; i++){
+   checkboxes[i].checked = true;
+}
+}
+</script>
+</body>
+</html>

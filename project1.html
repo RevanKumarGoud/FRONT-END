@@ -1,0 +1,93 @@
+<html>
+<title>project</title>
+<script type="text/javascript" src="223.js"></script>
+<style>
+body {
+    margin: 150;
+    padding: 10;
+    background-color: white;
+    color: powderblue;
+}
+input {
+   text-align: center;
+    background-color: red;
+}
+input[type=text] {
+  color: yellow;
+   border: none;
+ border-radius: 36px;
+}
+input[type=password] {
+      color: red;
+       border-radius: 33px;
+     border: none;
+}
+input[type=datetime-local] {
+     color: #f133;
+     border-radius: 33px;
+     border: none;
+}
+.select {
+     color: red;
+       border-radius: 33px;
+     border: none;
+     background-color: lightblue;
+}
+input[type=email] {
+   color: red;
+       border-radius: 33px;
+     border: none;
+     background-color: lightblue;
+     
+}
+</style>
+<body>
+<div>
+<img src="2.jpg" width="100" height="100">
+</div><br>
+<forms id="f1">
+<div>
+USERNAME: <input type="text" id="username" name="username" value="UserName"><br /><br />
+
+PASSWORD: <input type="Password" name="123456" value="Password"><br><br>
+
+BIRTH DATE:<input type="datetime-local" id="birthdaytime" name="birthdaytime"><br/><br/><br/>
+</div>
+EDUCATION SKILLS:<select class="select"  id="SKILLS" name="SKILLS">
+    <option value="none">none</option>
+    <option value="html">html</option>
+    <option value="CSS">CSS</option>
+    <option value="C#">C#</option>
+    <option value="C#">javascript</option>
+  </select><br/><br/>
+
+Email:<input type="email" id="email" name="email" value="some@mail.com"><br><br>
+
+     <h4>GENDER</h4>
+     Male <input type="radio" id="gender" name="Gender"><br /><br>
+    FeMale <input type="radio" id="gender" name="Gender"><br>
+      <h5>HABITS CHOSE</h5>
+  
+<ol>
+  <li><input type="checkbox" id="habbit" name="habbit" value="reading"> I have Reading</li><br>
+  <li> <input type="checkbox" id="habbit" name="habbit" value="painting"> I have painting</li><br>
+   <li><input type="checkbox" id="habbit" name="habbit" value="reading"> I have wacthing movies,websereis,etc.</li><br>
+
+   <li><input type="checkbox" id="habbit" name="habbit" value="lerning new things"> I love lerning new things</li><br>
+
+   <li><input type="checkbox" id="habbit" name="habbit" value="I have Traveling"> I have Traveling</li><br>
+
+   <li><input type="checkbox" id="habbit" name="habbit" value="Spend Alone"> I have Spend Alone</li><br>
+   
+   <li><input type="checkbox" id="habbit" name="habbit" value="Playgames"> I have Playgames</li><br>
+
+   <li><input type="checkbox" id="habbit" name="habbit" value="Dancing"> I have Dancing</li><br>      
+    
+    <button type="button" onclick="display()">Submit</button>
+ 
+
+     <button type="button" onclick="document.write()">reset</button>
+
+</ol>
+</body>
+</html>

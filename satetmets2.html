@@ -1,0 +1,32 @@
+<html>
+<title>Statements2</title>
+<style>
+#res { 
+      color: blue;
+}
+</style>
+<script>
+function relation()
+{
+   if(document.getElementById("t1").value==document.getElementById("t2").value)
+   {
+       document.getElementById("res").innerHTML="BOTH ARE EQUAL";
+   }
+   else if(document.getElementById("t1").value>document.getElementById("t2").value)
+   {
+         document.getElementById("res").innerHTML="FIRST NUMBER IS GREATER THAN SECOND NUMBER";     
+   }
+   else
+   {
+           document.getElementById("res").innerHTML="FIRST NUMBER IS SMALLER THAN SECOND NUMBER";
+   }
+
+}
+</script>
+<body>
+<h1>Enter first name:<input type=text id="t1"></h1><br>
+<h1>Enter second name:<input type=text id="t2"></h1><br>
+<button type="button" onclick="relation()">RELATE TWO NUMBERS</button><br>
+<div id="res"></div>
+</body>
+</html>

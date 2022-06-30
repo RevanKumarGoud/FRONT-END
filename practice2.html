@@ -1,0 +1,43 @@
+<html>
+<body>
+<script>
+var Countries = ['Japan', 'Germany', 'China', 'India', 'Brazil', 'France',];
+      for(var i = 0; i < Countries.length; i++) {
+         var counter =i+1;
+         var CharSuffix;
+        if(i === 0) {
+        CharSuffix = "st";
+  } 
+      else if(i == 2) {
+    CharSuffix ="nd";
+}
+    else if(i == 3) {
+    CharSuffix ="rd";
+}
+else {
+CharSuffix = "th"
+}
+     console.log("Biggest" +  "Econamic country" + counter +  CharSuffix + Countries[i]);
+}
+      var Numbers = [20,40,50,60,70];
+      for(var i = 0; i < Numbers.length; i++) {
+          Numbers.reverse();
+         var counter =i+1;
+         var CharSuffix
+        if(i === 0) {
+        CharSuffix = "st";
+  } 
+      else if(i == 2) {
+    CharSuffix ="nd";
+}
+    else if(i == 3) {
+    CharSuffix ="rd";
+}
+else {
+CharSuffix = "th"
+}
+     console.log("Biggest" +  "" + counter +  CharSuffix +Numbers[i]);
+}
+</script>
+</body>
+</html>

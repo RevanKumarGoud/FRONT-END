@@ -1,0 +1,33 @@
+<html>
+<body>
+<script>
+class brother {
+constructor(name,name1) {
+this.name = name;
+this.name1= name1;
+}
+BROS() {
+console.log(`my bro name is  : ${this.name}`);
+}
+}
+let BRO = new brother('Karthik',"Revan");
+console.log(`My bro name : ${BRO.name1} & ${BRO.name}`);
+
+class Bro {
+constructor(name){
+this.name = name;
+}
+}
+class ANNA extends Bro {
+constructor(name,name2) {
+super(name);
+this.name2 = name2;
+}
+}
+const R = new ANNA("Karthik","Ranadheer");
+console.log(`MY BROS :${R.name} & ${R.name2}`);
+
+
+</script>
+</body>
+</html>

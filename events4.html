@@ -1,0 +1,40 @@
+<html>
+<body>
+<p> select a for course</p>
+<p id ="demo"></p>
+Enter your name: <input type="text" id="fname"  value="Enter your name" onchange="my()"><br><br>
+         check :  <input type="text" onblur="Abb()"/><br><br>
+     <select id = "myselect" onchange = "change()">
+  <option value = "Html">Html</option>
+  <option value = "Css">css</option>
+  <option value = "Javascript">js</option>
+  <option value = "react">react</option>
+   <option value = "Angular">Angular</option>
+    <option value = "back-end">back-end</option>
+Enter your name : <input type ="text" value = ""onfocus = "Focus(this)">
+<input type ="password" id="button" />
+<script>
+function change() {
+var X = document.getElementById("myselect").value;
+document.getElementById("demo").innerHTML="YOU ARE SELECTED COURSE :"  + X;
+}
+function my() {
+var x = document.getElementById("fname");
+x.value = x.value.toUpperCase();
+}
+</script>
+<script>
+function Abb () {
+alert("let check");
+}
+function Focus(X) {
+X.style.background = "#459f";
+X.style.color = "red";
+}
+document.getElementById("button").onfocus=function(){AAl()};
+function AAl() {
+document.getElementById("button").style.color = "blue"
+}
+</script>
+</body>
+</html>

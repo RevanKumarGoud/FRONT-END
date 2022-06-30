@@ -1,0 +1,98 @@
+<html>
+<body>
+<script>
+class Car {
+ constructor (name,year) {
+this.name = name;
+this.year = year;
+}
+}
+let myCar = new Car("BMW", 2014);
+console.log(myCar.name+" "+myCar.year);
+
+class Emoplies {
+  constructor (name,salary,age) {
+  this.name = name;
+  this.salary= salary;
+  this.age = age;
+ }
+}
+let data = new Emoplies('Revan Goud', 45000 , 23);
+console.log(`Name :${data.name}  salary  :${data.salary} age : ${data.age}`);
+
+class socailmedia {
+  constructor (name,name1,name2,name3,name4) {
+  this.name = name;
+  this.name1= name1;
+  this.name2 = name2;
+  this.name3 = name3;
+  this.name4 =  name4;
+ }
+}
+let Datas = new socailmedia("Facebook","Instgram","Watsup","Teligram","Twiter")
+console.log(`Most devolping in Apps ${Datas.name} ${Datas.name1} ${Datas.name2} ${Datas.name3} ${Datas.name} `);
+
+class Uses {
+ constructor (name,year) {
+ this.name = name;
+ this.year = year;
+}
+age() {
+let date  = new Date();
+return date.getFullYear() - this.year; 
+
+}
+}
+let mycar = new Uses("HONDA",2013);
+console.log(mycar.name +" "+ mycar.age()+ "years old");
+
+class EMPOLYER {
+ constructor (name,year,SAlary) {
+ this.name = name;
+ this.year = year;
+ this.SAlary = SAlary;
+}
+age() {
+let dates  = new Date();
+return dates.getFullYear() - this.year; 
+
+}
+}
+let  X = new Uses("REVAN",1999,45000);
+console.log(X.name + X.age()+ "years old");
+
+class CAR {
+ constructor(brand) {
+this.carname = brand;
+}
+present() {
+return 'I have a' + this.carname;
+ }
+}
+class Model extends CAR {
+ constructor(brand,mod) {
+super(brand);
+this.model = mod;
+}
+show() {
+  return this.present() + ', it is a ' + this.model;
+}
+}
+let MYCAR = new Model("Ford", "Mustang");
+console.log(MYCAR.show());
+
+class Pet {
+  constructor(name) {
+    this.name = name;
+  }
+
+  introduce() {
+    console.log(`This is my pet, ${this.name}.`);
+  }
+}
+
+const dog = new Dog('Otis');
+console.log(dog.introduce());
+</script>
+</body>
+</html>

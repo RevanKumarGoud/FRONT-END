@@ -1,0 +1,44 @@
+<html>
+<title>Strings</title>
+<body>
+<h1>String-String Object-Methods</h1>
+<P id=demo></p>
+<P id=demo2></p>
+<P id=demo3></p>
+<p id= demo4></p>
+<p id=demo5>please visite account</p>
+<p id=demo6></p>
+<p id=demo7></p>
+<p id=demo8></p>
+<button onclick="RKM()">tryit</button>
+<script>
+let s1 = "String alow in javascript"
+document.getElementById("demo").innerHTML = s1;
+let s2 ="hello world ";//single quote 
+let s3 ='hello"revan"';//double quete
+let s4 ="hello'javascript'";
+document.getElementById("demo2").innerHTML = s2 + "<br>" + s3 + "<br>" + s4;
+let str = "Apple, Banana, Kiwi";
+document.getElementById("demo").innerHTML = str.slice(0,13);
+document.getElementById("demo3").innerHTML = str.slice(7);
+document.getElementById("demo6").innerHTML = str.indexOf("Apple");
+document.getElementById("demo7").innerHTML = str.lastIndexOf("Kiwi");
+document.getElementById("demo8").innerHTML = str.search("Kiwi",23);
+//note javascript count positipn from "0"-first position;
+//-ve possition& +ve postion;
+/*substring##substring() is similar to slice().
+
+The difference is that substring() cannot accept negative indexes.*/
+
+let = "Apple, Banana, Kiwi";
+document.getElementById("demo4").innerHTML = str.substring(7,12);
+/*Note
+The replace() method does not change the string it is called on.*/
+function RKM()
+ {
+let text = document.getElementById("demo5").innerHTML;
+document.getElementById("demo5").innerHTML = text.replace(/account/i,"W3Schools");
+}
+</script>
+</body>
+</html>
