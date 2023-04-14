@@ -1,8 +1,0 @@
-<html>
-<title>Strings</title>
-<body>
-<h1>String-String Object-Methods</h1>
-let s1="welcome to strings"
-document.write("s1");
-</body>
-</html>

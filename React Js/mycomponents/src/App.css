@@ -1,0 +1,25 @@
+.App {
+  text-align: center;
+}
+
+li{
+  list-style: none;
+}
+.bg{
+  background-color: #979d81;
+}
+.left{
+  margin-left: -40rem;
+}
+.right{
+  margin-left: 40rem;
+  margin-top: -7rem;
+}
+body{
+  box-sizing: border-box;
+}
+  
+.card{
+  margin: 8rem;
+  
+}

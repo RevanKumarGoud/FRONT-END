@@ -1,7 +1,0 @@
-<html>
-<title>link</title>
-<body>
- <h1>HTML link<h1>
-<p><a href="https://www.youtube.com/">click here</a>
-</body>
-</html>
