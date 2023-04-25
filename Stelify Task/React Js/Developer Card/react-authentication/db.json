@@ -1,0 +1,44 @@
+{
+  "User": [
+    {
+      "name": "KURMINDLA REVANKUMAR GOUD",
+      "phone": "09866954963",
+      "email": "revankumargoudkurmindla@gmail.com",
+      "GitHub": "https://github.com/RevanKumarGoud",
+      "Linkdin": "http://linkdin.com",
+      "Fb": "http://tweter.com",
+      "Password": "1999",
+      "id": 1
+    },
+    {
+      "name": "KURMINDLA REVANKUMAR GOUD",
+      "phone": "09866954963",
+      "email": "revan@gmail.com",
+      "GitHub": "http://localhost:3000/register",
+      "Linkdin": "http://localhost:3000/register",
+      "Fb": "http://localhost:3000/register",
+      "Password": "1999",
+      "id": 2
+    },
+    {
+      "id": "Revan@gmail.com",
+      "name": "Revan",
+      "phone": "09938471999",
+      "email": "revan@gmail.com",
+      "GitHub": "http://localhost:3000/register",
+      "Linkdin": "http://localhost:3000/register",
+      "Fb": "http://localhost:3000/register",
+      "Password": "1999",
+      "eMailverified": true
+    },
+    {
+      "id": "Revankumargoud@gmail.com",
+      "name": "Revan goud",
+      "phone": "98273773",
+      "GitHub": "https://github.com/RevanKumarGoud",
+      "Linkdin": "http://linkdin.com",
+      "Fb": "http://linkdin.com",
+      "Password": "1999"
+    }
+  ]
+}
